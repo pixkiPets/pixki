@@ -39,7 +39,7 @@ div.newsletter {
 }
 
 .newsletter_box {
-    background-image: url(/img/cat.jpg);
+    background-image: url(img/cat.jpg);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
