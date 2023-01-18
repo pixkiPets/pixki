@@ -1,0 +1,348 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800&display=swap');
+* {
+    box-sizing: border-box;
+}
+section.hero {
+    height: calc(100% - 64px);
+    padding: 35px 20px 75px 20px;
+    min-height: 550px;
+    margin-top: 64px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-image: url(/dog.jpg);
+}
+
+html, body {
+    height: 100%;
+    font-family: 'Poppins', sans-serif;
+    margin: 0 auto;
+    scroll-behavior: smooth;
+}
+
+.hero_container h1 {
+    margin: 0;
+    text-align: center;
+    font-size: 46px;
+    color: #fff;
+}
+
+.hero_container {
+    padding: 35px 0;
+    display: flex;
+    flex-direction: column;
+}
+
+div.newsletter {
+    padding: 90px 30px 120px 30px;
+}
+
+.newsletter_box {
+    background-image: url(/cat.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    max-width: 800px;
+    margin: 0 auto;
+    border-radius: 20px;
+    padding: 35px 15px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+}
+
+.newsletter_box h6 {
+    margin: 0 0 8px 0;
+    font-weight: 500;
+    letter-spacing: 1px;
+    color: hsl(0deg 0% 100% / 50%);
+    font-size: 14px;
+}
+
+.newsletter_box h2 {
+    margin: 0;
+    color: #fff;
+    font-weight: 400;
+    font-size: 24px;
+}
+
+.newsletter_box a, .hero_container .btn {
+    background: #ffffff;
+    padding: 11px 16px;
+    display: block;
+    margin: 0 auto;
+    text-decoration: none;
+    border-radius: 12px;
+    line-height: 1;
+    margin-top: 18px;
+    color: #4081ec;
+    min-width: 160px;
+    border: 2px solid #fff;
+    font-size: 15px;
+    font-weight: 500;
+    transition: all 0.3s ease;
+    cursor: pointer;
+}
+
+.newsletter_box a:hover, .hero_container .btn:hover {
+    background: #4081ec;
+    color: #fff;
+}
+
+.newsletter_box a:active, .hero_container .btn:active {
+    background: rgb(255 255 255 / 20%);
+    color: #fff;
+}
+
+div.footer {
+    height: 52px;
+    background: #f8f9fa;
+    border-top: 1px solid #dadce0;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    font-size: 13px;
+    color: #7e7e7e;
+    font-weight: 500;
+    letter-spacing: 0.5px;
+}
+.navbar {
+    display: flex;
+    height: 64px;
+    border-bottom: 1px solid #dadce0;
+    align-items: center;
+    padding: 0 30px;
+    justify-content: space-between;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background: #fff;
+    z-index: 1;
+}
+
+.navbar_links a {
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: 400;
+    color: #666666;
+    display: block;
+    margin-left: 28px;
+    padding: 4px 12px;
+    border-radius: 6px;
+}
+
+.navbar_links {
+    display: flex;
+}
+
+a.navbar_btn {
+    font-weight: 500;
+    background: #4081ec;
+    color: #fff;
+}
+
+.navbar_links a.navbar_btn:hover {
+    box-shadow: 0px 1px 2px 0px rgb(60 64 67 / 15%), 0px 1px 3px 1px rgb(60 64 67 / 7%);
+    background: #4081ec;
+}
+
+.navbar_links a:hover {
+    background: whitesmoke;
+}
+section.faq {
+    width: 100%;
+    margin: 0 auto;
+    max-width: 880px;
+}
+
+section.faq h3 {
+    margin: 0 0 30px 0;
+    font-weight: 600;
+    color: #666666;
+}
+
+.faq_item {
+    border-radius: 10px;
+    background: #fdfdfd;
+    border: 2px solid #f5f5f5;
+    margin-bottom: 25px;
+    max-height: 46px;
+    cursor: pointer;
+    overflow: hidden;
+}
+
+.faq_header {
+    height: 46px;
+    display: flex;
+    align-items: center;
+    padding: 0 15px;
+    font-size: 14px;
+    color: #494755;
+    font-weight: 500;
+}
+
+.faq_item:hover {
+    background: #fafafa;
+}
+
+.faq_content {
+    padding: 0 18px 18px 18px;
+    font-size: 13px;
+}
+
+.faq_item.active {max-height: inherit;background: #fff;}
+
+.faq_icon {
+    display: flex;
+    align-items: center;
+    margin-left: auto;
+}
+
+svg.faq_plus {
+    fill: #a3a3a3;
+}
+
+svg.faq_minus {
+    fill: #4081ec;
+    display: none;
+}
+
+.faq_item.active svg.faq_plus {
+    display: none;
+}
+
+.faq_item.active svg.faq_minus {
+    display: block;
+}
+section.services {
+    width: 100%;
+    margin: 0 auto;
+    max-width: 880px;
+    padding-bottom: 90px;
+}
+
+.services_content h3 {
+    text-align: left;
+    font-size: 29px;
+    font-weight: 500;
+    color: #504a5c;
+    margin: 0 0 36px 0;
+}
+
+.services_list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.service_item {
+    flex: 0 0 calc(100% / 2);
+    margin-bottom: 30px;
+}
+
+.service_item:nth-child(2n) {
+    padding-left: 60px;
+}
+
+.service_item:nth-child(2n+1) {
+    padding-right: 100px;
+}
+
+.services_content h3:after {
+    content: "";
+    height: 3px;
+    width: 66px;
+    background: #4081ec;
+    position: relative;
+    display: block;
+    margin-top: 5px;
+}
+
+.service_item h5 {
+    font-size: 14px;
+    color: #504a5c;
+    font-weight: 500;
+    margin: 0 0 12px 0;
+}
+
+.service_item h5 + p {
+    font-size: 13px;
+    margin: 0;
+    color: #948f90;
+    max-width: 290px;
+}
+
+.service_icon {
+    height: 40px;
+    width: 40px;
+    background: #f6f4fe;
+    margin-bottom: 12px;
+    border-radius: 10px;
+}
+
+
+.hero_container p {
+    text-align: center;
+    margin: 30px auto;
+    max-width: 730px;
+    color: rgb(255 255 255 / 75%);
+    font-size: 16px;
+    line-height: 2;
+}
+
+.hero_container .btn {
+    margin: 6px auto 0 auto;
+    text-align: center;
+}
+
+section.about {
+    height: calc(100% - 64px);
+    padding: 35px 20px 75px 20px;
+    min-height: 550px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    background: #4081ec;
+}
+
+section.about p {
+    text-align: center;
+    margin: 0 auto;
+    max-width: 730px;
+    font-size: 20px;
+    line-height: 2;
+    color: #fff;
+}
+
+section.about h2 {
+    text-align: left;
+    font-size: 29px;
+    font-weight: 500;
+    color: #504a5c;
+    margin: 0 0 26px 0;
+}
+
+section.about h2:after {
+    content: "";
+    height: 3px;
+    width: 66px;
+    background: #4081ec;
+    position: relative;
+    display: block;
+    margin: 10px auto 0 auto;
+}
+#faq, #about, #services {
+    margin-top: -94px;
+    position: absolute;
+}
+#about {
+    margin-top: -64px;
+}
+.logo img {
+    display: block;
+    height: 54px;
+    margin-bottom: -8px;
+}
