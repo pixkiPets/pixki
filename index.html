@@ -4,60 +4,72 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>PIKXY</title>
+    <title>Pixky</title>
     <link rel="stylesheet" href="style.css">
     <link rel="icon" type="image/x-icon" href="favicon.ico">
 </head>
 <body>
-    <div class="navbar">
+    <div class="problem">
         <div class="logo">
-            <img src="pikxy_logo.png" alt="logo">
+            <img src="logo.svg">
         </div>
-        <div class="navbar_links">
-
-            <a href="mailto:pixkimascotas@gmail.com" class="navbar_btn">WaitList</a>
+        <div class="problem_contant">
+            <h1><span>Tu mascota</span> es tu mejor amigo, Nosotros el mejor amigo de <span>tu mascota</span></h1>
+            <p>En la actualidad, conseguir hospedaje o guarderia para tu mascota es un verdadero dolor de cabeza. La oferta en internet es variada pero nunca se sabe que escoger y como escogerlo. Miles de historias catastroficas abundan en la red y definitivamente no es algo que nos gustaria que nos sucediera a nosotros y a nuestras mascotas. No se puede dejar de lado el tema economico, se cobran cantidades absurdas por el cuidado de mascotas y los usuarios estamos de manos atadas.</p>
         </div>
     </div>
-   <section class="hero">
-        <div id="hero"></div>
-        <div class="hero_container">
-            <h1>Tu mascota es tu mejor amigo, <br>Nosotros el mejor amigo de tu mascota</h1>
-            <p>En la actualidad, conseguir hospedaje o guarderia para tu mascota es un verdadero dolor de cabeza.
-                La oferta en internet es variada pero nunca se sabe que escoger y como escogerlo. Miles de historias catastroficas abundan en la red y definitivamente no es algo que nos gustaria que nos sucediera a nosotros y a nuestras mascotas.
-                No se puede dejar de lado el tema economico, se cobran cantidades absurdas por el cuidado de mascotas y los usuarios estamos de manos atadas.</p>
-            
+    <div style="display:none;" class="header">
+        <div class="hero">
+            <div class="hero_content">
+                <h1>
+                    <span>Tu mascota es tu mejor<br> amigo, Nosotros el mejor<br> amigo de tu mascota</span>
+                </h1>
+                <p>En la actualidad, conseguir hospedaje o guarderia para tu mascota es un verdadero dolor de cabeza. La oferta en internet es variada pero nunca se sabe que escoger y como escogerlo. Miles de historias catastroficas abundan en la red y definitivamente no es algo que nos gustaria que nos sucediera a nosotros y a nuestras mascotas. No se puede dejar de lado el tema economico, se cobran cantidades absurdas por el cuidado de mascotas y los usuarios estamos de manos atadas.</p>
+            </div>
+            <div class="hero_img">
+                <div class="hero_img_container"></div>
+            </div>
         </div>
-   </section> 
-   <div id="about"></div>
-   <section class="about">
-        
-        <p>Seria increible que existiera un sitio con la mayor disponibilidad de hospedajes y servicios especializados para mascotas y que busque hacer la vida de los “dueños” más fácil.
-            Una aplicacion que haga el trabajo de analizar y estudiar cual seria la mejor opcion para el cuidado general de las mascota, ahorrandole asi tiempo y dinero al usuario.</p>
-            <br>
-            <p> "Esta idea no debe basarse unicamente en los padres de mascotas, es fundamental tomar en cuenta a todos aquellos que generan ingresos en este ecocistema (veterinarias, cuidadores, entrenadores, petshops y guarderias). Este tambien debe ser un espacio para ellos y sus servicios."</p>
-        </section>
-   <div class="newsletter">
-        <div class="newsletter_box">
-            <h2>Si te entusiasma que esta idea se haga realidad. Queremos que seas de los primeros en probarla. ¡Anotate YA!</h2>
-            <a href="mailto:pixkimascotas@gmail.com">WaitList</a>
+    </div>
+    <div class="solution">
+        <div class="solution_item">
+            Seria increible que existiera un sitio con la mayor disponibilidad de hospedajes y servicios especializados para mascotas y que busque hacer la vida de los “dueños” más fácil.
         </div>
-   </div>
-   <div class="footer">© Pikxy 2023. Todos los derechos reservados.</div>
-   <script>
-       document.querySelectorAll(".faq_item").forEach(element => {
-        element.addEventListener("click", function() {
-            if (this.classList.contains("active")) {
-                document.querySelectorAll(".faq_item").forEach(element => {
-                    element.classList.remove("active");
-                });
-            } else {
-                document.querySelectorAll(".faq_item").forEach(element => {
-                    element.classList.remove("active");
-                });
-                this.classList.toggle("active");
-            }
-        })
-       });
-   </script>
-   </body>
+        <div class="solution_item">
+            Una aplicacion que haga el trabajo de analizar y estudiar cual seria la mejor opcion para el cuidado general de las mascota, ahorrandole asi  tiempo y dinero al usuario.
+        </div>
+    </div>    
+    <div class="about">
+        <p>Esta idea no debe basarse unicamente en los padres de mascotas, es fundamental tomar en cuenta a todos aquellos que generan ingresos en este ecocistema (veterinarias, cuidadores, entrenadores, petshops y guarderias).</p>
+        <p>Este tambien debe ser un espacio para ellos y sus servicios.</p>
+    </div>
+    <div class="team">
+        <h2>Nuestro equipo</h2>
+        <div class="team_container">
+            <div class="tem_item">
+                <div class="team_img"></div>
+                <h3>Full Name</h3>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. A, beatae. Omnis iusto quam incidunt quaerat, eligendi ipsa natus! Suscipit odio dolor vero obcaecati ab cupiditate excepturi officiis quia iusto laudantium!</p>
+            </div>
+            <div class="tem_item">
+                <div class="team_img"></div>
+                <h3>Full Name</h3>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. A, beatae. Omnis iusto quam incidunt quaerat, eligendi ipsa natus! Suscipit odio dolor vero obcaecati ab cupiditate excepturi officiis quia iusto laudantium!</p>
+            </div>
+            <div class="tem_item">
+                <div class="team_img"></div>
+                <h3>Full Name</h3>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. A, beatae. Omnis iusto quam incidunt quaerat, eligendi ipsa natus! Suscipit odio dolor vero obcaecati ab cupiditate excepturi officiis quia iusto laudantium!</p>
+            </div>
+        </div>
+    </div>
+    <div class="contact">
+        <div class="contact_container">
+            <h2>Contactanos</h2>
+            <p>Si te entusiasma que esta idea se haga realidad. Queremos que seas de los primeros en probarla</p>
+            <a href="mailto:pixkimascotas@gmail.com" class="btn">Mista de espera</a>    
+        </div>
+    </div>
+    <footer>© Pikxy 2023. Todos los derechos reservados.</footer>
+</body>
 </html>
