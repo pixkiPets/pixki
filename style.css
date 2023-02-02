@@ -43,13 +43,18 @@ html, body {
 }
 
 .tem_item {
-    flex: 0 0 283px;
+    flex: 0 0 calc((100% - 40px) / 3);
     padding: 24px 24px 36px 24px;
     background: rgba(0, 0, 0, .2);
     border-radius: 10px;
     transition: background 200ms, box-shadow 150ms;
     color: #fff;
     cursor: pointer;
+    margin-right: 20px;
+}
+
+.tem_item:last-child {
+    margin-right: 0;
 }
 
 .tem_item h3 {
@@ -430,6 +435,9 @@ footer {
     top: 0;
 }
 
+@media only screen and (max-width: 1030px) {
+
+}
 
 @media only screen and (max-width: 530px) {
     .logo img {display: block;margin: 0 auto;}
@@ -486,6 +494,7 @@ footer {
     
     .tem_item {
         margin-bottom: 30px;
+        margin-right: 0;
     }
     
     .tem_item:last-child {
