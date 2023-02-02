@@ -5,18 +5,19 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Pixky</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="stylenew.css">
     <link rel="icon" type="image/x-icon" href="favicon.ico">
 </head>
 <body>
+    <div class="logo">
+        <img src="logo.svg">
+    </div>
     <div class="problem">
-        <div class="logo">
-            <img src="logo.svg">
-        </div>
+        <div class="problem_img"></div>
         <div class="problem_contant">
             <h1><span>Tu mascota</span> es tu mejor amigo, Nosotros el mejor amigo de <span>tu mascota</span></h1>
             <p>En la actualidad, conseguir hospedaje o guarderia para tu mascota es un verdadero dolor de cabeza. La oferta en internet es variada pero nunca se sabe que escoger y como escogerlo. Miles de historias catastroficas abundan en la red y definitivamente no es algo que nos gustaria que nos sucediera a nosotros y a nuestras mascotas. No se puede dejar de lado el tema economico, se cobran cantidades absurdas por el cuidado de mascotas y los usuarios estamos de manos atadas.</p>
-        </div>
+        </div>    
     </div>
     <div style="display:none;" class="header">
         <div class="hero">
@@ -65,9 +66,23 @@
     </div>
     <div class="contact">
         <div class="contact_container">
-            <h2>Contactanos</h2>
-            <p>Si te entusiasma que esta idea se haga realidad. Queremos que seas de los primeros en probarla</p>
-            <a href="mailto:pixkimascotas@gmail.com" class="btn">Mista de espera</a>    
+            <div class="contact_section">
+                <h2>Contactanos</h2>
+                <p>Si te entusiasma que esta idea se haga realidad. Queremos que seas de los primeros en probarla</p>
+                <a href="mailto:pixkimascotas@gmail.com" class="btn">Mista de espera</a>        
+            </div>
+            <div class="wait-list">
+                <h3>Join the wait list</h3>
+                <div class="input_container">
+                    <input type="text" name="name">
+                    <label>Nombre</label>
+                </div>
+                <div class="input_container">
+                    <input type="text" name="email">
+                    <label>Email</label>
+                </div>
+                <div class="btn">Join</div>
+            </div>
         </div>
     </div>
     <footer>© Pikxy 2023. Todos los derechos reservados.</footer>
